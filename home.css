@@ -7,7 +7,13 @@ h1,p,a,h2{
 }
 .background{
     background-color:#F3F9AE;
-    height: 750px;
+    height: 821px;
+}
+.satu{
+    background-color: #F3F9AE;
+}
+.kedua{
+    background-color: #F3F9AE;
 }
 /* satu */
 hr{
@@ -16,16 +22,16 @@ hr{
 }
 .satu{
     display: flex;
-    padding-left: 100px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px 0;
+
 }
 .satu h1{
-    padding-right: 150px;
-    padding-left: 50px;
     font-size: 30px;
     color: black;
 }
 .satu a{
-    padding-top: 25px;
     text-decoration: none;
     color: black;
 }
@@ -36,12 +42,6 @@ hr{
 .satu a:hover{
     color: grey;
 }
-.satu-menu{
-    padding-top: 40px;
-    padding-left: 270px;
-    margin-right: 270px;
-    word-spacing: 5px;
-}
 .satu-menu a{
     text-decoration: none;
     color: black;
@@ -51,42 +51,27 @@ hr{
 }
 /* kedua */
 .kedua{
-    display: inline-flex;
-}
-.kedua .title{
-    padding-left: 150px;
-    padding-top: 50px;
-    line-height: 70px;
+    display: flex;
+    place-content: center;
+    padding: 80px 0;
 }
 .kedua .kedua-kiri .title h1{
-    position: absolute;
+    margin: 0;
 }
-
 .kedua .title h1{
-    word-spacing: 5px;
     font-size: 80px;
     color: black;
 }
 .kedua .isi{
-    padding-top: 250px;
-    padding-left: 153px;
     color: black;
 }
 .kedua .isi h1{
     font-size: 25px;
 }
-.kedua .follow{
-    padding-left: 153px;
-}
 .kedua p{
     color: black;
 }
-.kedua-icon {
-    padding-left: 153px;
-}
 .kedua .kedua-img img{
-    padding-left: 50px;
-    padding-top: 50px;
     height: 500px;
     width: 530px;
 }
@@ -101,40 +86,54 @@ section .about-bungkus-kiri{
     opacity: 0.5;
     width: 45%;
     height: 100%;
+    display: flex;
+    place-content: center;
 }
 section div .about-isi{
-    padding-left: 153px;
-    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
 }
 section div .about-isi h1{
     color: grey;
+    margin: 0;
 }
 section div .about-isi p{
     color: grey;
+    margin: 0;
 }
 section .about-bungkus-kanan .atas-isi{
-    padding-left: 71px;
     border-bottom: 6px solid black;
-    padding-top: 14px;
-    width: 762px;
+    width: 834px;
     height: 193px;
     border-block-start: 150px;
-}
-section .about-bungkus-kanan{
-    padding-top: 16px;
+    place-content: center;
+    display: flex;
+    flex-direction: column;
 }
 section .about-bungkus-kanan .atas-isi h1{
-    padding-left: 330px;
+    display: flex;
+    justify-content: center;
 }
 section .about-bungkus-kanan .atas-isi .bungkus-isi .ai-nilai{
-    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section .about-bungkus-kanan .atas-isi .bungkus-isi .ps-nilai{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section .about-bungkus-kanan .atas-isi .bungkus-isi .xd-nilai{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 section .about-bungkus-kanan .atas-isi img{
     width: 50px;
     height: 50px;
-    padding-right: 84px;
-    margin-left: 56px;
-    margin-bottom: 14px;
+    margin: 10px 0;
 }
 section .about-bungkus-kanan .atas-isi .atas-nilai-ai{   
     height: 5px;
@@ -158,86 +157,229 @@ section .about-bungkus-kanan .atas-isi .atas-nilai-xd{
     background-color: lightgreen;
 }
 section .about-bungkus-kanan .atas-isi .bungkus-isi{
-    padding-left: 0px;
-    padding-left: 61px;
     display: flex;
+    place-content: center;
+    gap: 25px;
 }
-section .about-bungkus-kanan .atas-isi .atas-nilai .bungkus-isi .ai-nilai .atas-nilai{
-    padding-right: 10px;
-}
-section .about-bungkus-kanan .bungkus-bawah .bawah-title{
-    padding-left: 71px;
+
+/* language */
+
+section .about-bungkus-kanan .bungkus-bawah{
+    place-content: center;
+    display: grid;
 }
 section .about-bungkus-kanan .bungkus-bawah .bawah-title h1{
-    padding-left: 305px;
+    display: flex;
+    justify-content: center;
+}
+section .about-bungkus-kanan .bungkus-bawah .language{
+    display: flex;
+    gap: 25px;
 }
 section .about-bungkus-kanan .bungkus-bawah .language img{
     height: 50px;
     width: 50px;
+    margin: 10px 0;
+}
+section .about-bungkus-kanan .bungkus-bawah .language .bungkus-ind{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .about-bungkus-kanan .bungkus-bawah .language .bungkus-ind .nilai-ind{
+    height: 5px;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
+    width: 150px;
+    background-color: lightgreen;
+}
+section .about-bungkus-kanan .bungkus-bawah .language .bungkus-usa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .about-bungkus-kanan .bungkus-bawah .language .bungkus-usa .nilai-usa{
+    height: 5px;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
+    width: 150px;
+    background-color: lightgreen;
+}
+section .about-bungkus-kanan .bungkus-bawah .language .bungkus-chinese{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .about-bungkus-kanan .bungkus-bawah .language .bungkus-chinese .nilai-chinese{
+    height: 5px;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
+    width: 150px;
+    background-color: lightgreen;
 }
 
+
 /* work */
+
 .work{
     background-color: #F3F9AE;
+    height: 1626px;
 }
 .work .work1{
     display: flex;
+    justify-content: center;
 }
 .work .work-title{
-    padding-left: 153px;
-    padding-top: 128px;
+    padding: 60px 193px;
 }
 .work .work-title h1{
-    font-size: 50px;
-    padding-top: 8px;
-    margin-top: 0px;
-    line-height: 5px;
+    margin: 0;
 }
 .work .work-title p{
-    line-height: 5px;
+    margin: 0;
 }
 .work .work1 img{
-    padding-left: 153px;
     height: 340px;
     width: 500px;
-    margin-right: -100;
 }
 .work .work1 .work-desc1 {
     border-top: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
-    padding-right: 90px;
-    width: 25%;
-}
-.work .work1 .work-desc1 {
-    padding-top: 80px;
-    margin-left: 95px;
-    padding-left: 110px;
+    width: 498;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
 }
 .work .work1 .work-desc1 h2,h1{
     color: grey;
-
+}
+.work .work1 .work-desc1 h2{
+    font-size: 20px;
+}
+.work .work1 .work-desc1 h1{
+    font-size: 30px;
 }
 .work .work1 .work-desc1 p{
     line-height: 1px;
     color: grey;
 }
+/* work2 */
 .work .work2{
     display: flex;
-    padding-left: 153px;
+    justify-content: center;
+    padding: 25px 0;
 }
 .work .work2 .work2-table{
     border: 2px black solid;
-    height: 355px;
-}
-.work .work2 .work-desc2{
-    
-    padding-top: 10px;
+    height: 337px;
+    width: 498px;
+    border-right: 0;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
 }
 .WORK .work2 .work-desc2 h1,h2{
     color: grey;
 }
+.work .work2 .work-desc2 h1{
+    font-size: 30px;
+}
+.work .work2 .work-desc2 h2{
+    font-size: 20px;
+}
+.work .work2 .work-desc2 .work2-isi{
+    line-height: 1  ;
+}
 .work .work2 .work-desc2 p{
     color: grey;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+.work .work2 img{
+    height: 340px;
+    width: 500px;
+}
+/* work3 */
+.work .work3{
+    display: flex;
+    justify-content: center;
+}
+.work .work3 img{
+    height: 340px;
+    width: 500px;
+}
+.work .work3 .work-desc3 {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 498;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+.work .work3 .work-desc3 h1{
+    font-size: 30px;
+}
+.work .work3 .work-desc3 h2{
+    font-size: 20px;
+}
+.work .work3 .work-desc3 p{
+    color: grey;
+    margin: 0;
+}
+/* contact */
+
+.contact1{
+    display: -ms-inline-grid;
+    background-color: #39414F;
+}
+.contact1 h1{
+    padding-top: 0;
+    font-size: 50px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin: 0 324px;
+
+}
+.contact-isi{
+    width: 30%;
+    height: 80%;
+    padding: 60px 39px;
+    margin: 0 145px;
+}
+.contact-isi form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+input,
+    textarea{
+        background-color: white;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 100%;
+        border-radius: 10px;
+    }
+input:focus,
+textarea:focus {
+    outline: 3px solid black;
+}
+.tombol1{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    height: 43px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-out;
+    width: 330;
+}
+.tombol1:hover{
+    opacity: 0.7;
 }
 
